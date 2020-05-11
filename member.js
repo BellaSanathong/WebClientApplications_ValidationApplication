@@ -59,6 +59,7 @@ $(document).ready(function() {
 			$("#verify").val(verify);
 			
 			// validate the company name entry
+			var companyNamePattern = /\b[A-Za-z0-9._%+-]{2,4}\b/;
 			if ( !$("#company_name").attr("disabled")) {
 				var companyName = $("#company_name").val().trim();
 				if (companyName == "") {
